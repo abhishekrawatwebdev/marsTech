@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"
+      integrity="sha512-b3xr4frvDIeyC3gqR1/iOi6T+m3pLlQyXNuvn5FiRrrKiMUJK3du2QqZbCywH6JxS5EOfW0DY0M6WwdXFbCBLQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/Marslogo.PNG" type="image/x-icon" />
+    <title>Mars-tech Dashboard</title>
+  </head>
+  <body>
+    <div class="full_dashboard">
+      <nav class="side_navbar">
+        <div class="logo">
+          <img src="images/Marslogo.PNG" alt="" />
+        </div>
+        <div class="navlinks">
+          <ul>
+            <li class="activelist">
+              <i class="fas fa-home"></i>
+              <p>Dashboard</p>
+            </li>
+            <li>
+              <i class="fas fa-boxes"></i>
+              <p>All inventory</p>
+            </li>
+            <li>
+              <i class="fas fa-cart-arrow-down"></i>
+              <p>Pending Carts</p>
+            </li>
+            <li>
+              <i class="fas fa-dolly-flatbed"></i>
+              <p>Inventory-Orders</p>
+            </li>
+            <li>
+              <i class="fas fa-user-plus"></i>
+              <p>Add New Buyer</p>
+            </li>
+            <li>
+              <i class="fas fa-cart-plus"></i>
+              <p>Create Buyer Cart</p>
+            </li>
+            <li>
+              <i class="fas fa-people-carry"></i>
+              <p>Completed Orders</p>
+            </li>
+          </ul>
+        </div>
+        <div class="navlinks bottom_links">
+          <button class="add_association_button" id="add_association_button">
+            <i class="fas fa-plus-circle"></i>
+            <p>Add Associations</p>
+          </button>
+          <ul>
+            <li>
+              <i class="fas fa-user"></i>
+              <p>My Profile</p>
+            </li>
+            <li>
+              <i class="fas fa-sign-out-alt"></i>
+              <p>Logout</p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="dashboard_section">
+        <div class="dashboard_heading_section">
+          <div class="heading">
+            <h1>Dashboard</h1>
+            <p>All details about your Products and Sales are here...</p>
+          </div>
+          <div class="dashboard_notification"><i class="far fa-bell"></i></div>
+        </div>
+        <div class="inventory_section">
+          <div class="inventory_heading">
+            <h1>Inventory</h1>
+            <p><a href="#">see all</a></p>
+          </div>
+          <div class="partial_product_list">
+            <div class="product_adder">
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="product_details">
+              <img src="images/muslin.png" alt="" />
+              <p class="product_name">Muslin</p>
+              <p class="product_price">$200</p>
+            </div>
+            <!-- pasting new product detail -->
+            <div class="product_details">
+              <img src="images/cotton.png" alt="" />
+              <p class="product_name">Cotton</p>
+              <p class="product_price">$100</p>
+            </div>
+            <!-- //////////////////// -->
+            <div class="product_details">
+              <img src="images/tericot.png" alt="" />
+              <p class="product_name">Tericot</p>
+              <p class="product_price">$400</p>
+            </div>
+            <!-- //////////////////// -->
+            <div class="product_details">
+              <img src="images/wool.png" alt="" />
+              <p class="product_name">Wool</p>
+              <p class="product_price">$600</p>
+            </div>
+            <!-- //////////////////// -->
+            <div class="product_details">
+              <img src="images/silk.png" alt="" />
+              <p class="product_name">silk</p>
+              <p class="product_price">$1200</p>
+            </div>
+            <!-- //////////////////// -->
+            <div class="product_details">
+              <img src="images/muslin.png" alt="" />
+              <p class="product_name">Muslin</p>
+              <p class="product_price">$200</p>
+            </div>
+            <!-- pasting new product detail -->
+            <div class="product_details">
+              <img src="images/cotton.png" alt="" />
+              <p class="product_name">Cotton</p>
+              <p class="product_price">$100</p>
+            </div>
+            <!-- //////////////////// -->
+            <div class="product_details">
+              <img src="images/tericot.png" alt="" />
+              <p class="product_name">Tericot</p>
+              <p class="product_price">$400</p>
+            </div>
+            <!-- //////////////////// -->
+            <div class="product_details">
+              <img src="images/wool.png" alt="" />
+              <p class="product_name">Wool</p>
+              <p class="product_price">$600</p>
+            </div>
+            <!-- //////////////////// -->
+            <div class="product_details">
+              <img src="images/silk.png" alt="" />
+              <p class="product_name">silk</p>
+              <p class="product_price">$1200</p>
+            </div>
+            <div class="product_details">
+              <img src="images/muslin.png" alt="" />
+              <p class="product_name">Muslin</p>
+              <p class="product_price">$200</p>
+            </div>
+            <!-- pasting new product detail -->
+            <div class="product_details">
+              <img src="images/cotton.png" alt="" />
+              <p class="product_name">Cotton</p>
+              <p class="product_price">$100</p>
+            </div>
+            <!-- //////////////////// -->
+            <div class="product_details">
+              <img src="images/tericot.png" alt="" />
+              <p class="product_name">Tericot</p>
+              <p class="product_price">$400</p>
+            </div>
+            <!-- //////////////////// -->
+            <div class="product_details">
+              <img src="images/wool.png" alt="" />
+              <p class="product_name">Wool</p>
+              <p class="product_price">$600</p>
+            </div>
+            <!-- //////////////////// -->
+            <div class="product_details">
+              <img src="images/silk.png" alt="" />
+              <p class="product_name">silk</p>
+              <p class="product_price">$1200</p>
+            </div>
+          </div>
+        </div>
+        <div class="carts_and_orders">
+          <div class="pending_carts_section">
+            <h1 class="pending_heading">Pending Carts</h1>
+            <div class="pending_carts_summary">
+              <div class="single_summary">
+                <div class="name_and_price">
+                  <p>Jhon Doe</p>
+                  <div class="price_summary">
+                    <p>32 pc</p>
+                    <p class="summary_price">$4500</p>
+                  </div>
+                </div>
+                <div class="place_and_payment_status">
+                  <p class="place">Maharashtra</p>
+                  <p class="payment_status">Payment Pending</p>
+                </div>
+              </div>
+              <div class="single_summary blue_coloured">
+                <div class="name_and_price">
+                  <p>Jhon Doe</p>
+                  <div class="price_summary">
+                    <p>32 pc</p>
+                    <p class="summary_price">$4500</p>
+                  </div>
+                </div>
+                <div class="place_and_payment_status">
+                  <p class="place">Maharashtra</p>
+                  <p class="payment_status">Finalising Cart</p>
+                </div>
+              </div>
+              <div class="single_summary red_colored">
+                <div class="name_and_price">
+                  <p>Jhon Doe</p>
+                  <div class="price_summary">
+                    <p>32 pc</p>
+                    <p class="summary_price">$4500</p>
+                  </div>
+                </div>
+                <div class="place_and_payment_status">
+                  <p class="place">Maharashtra</p>
+                  <p class="payment_status">Billed</p>
+                </div>
+              </div>
+              <div class="single_summary">
+                <div class="name_and_price">
+                  <p>Jhon Doe</p>
+                  <div class="price_summary">
+                    <p>32 pc</p>
+                    <p class="summary_price">$4500</p>
+                  </div>
+                </div>
+                <div class="place_and_payment_status">
+                  <p class="place">Maharashtra</p>
+                  <p class="payment_status">Payment Pending</p>
+                </div>
+              </div>
+              <div class="single_summary blue_coloured">
+                <div class="name_and_price">
+                  <p>Jhon Doe</p>
+                  <div class="price_summary">
+                    <p>32 pc</p>
+                    <p class="summary_price">$4500</p>
+                  </div>
+                </div>
+                <div class="place_and_payment_status">
+                  <p class="place">Maharashtra</p>
+                  <p class="payment_status">Finalising Cart</p>
+                </div>
+              </div>
+              <div class="single_summary red_colored">
+                <div class="name_and_price">
+                  <p>Jhon Doe</p>
+                  <div class="price_summary">
+                    <p>32 pc</p>
+                    <p class="summary_price">$4500</p>
+                  </div>
+                </div>
+                <div class="place_and_payment_status">
+                  <p class="place">Maharashtra</p>
+                  <p class="payment_status">Billed</p>
+                </div>
+              </div>
+              <div class="single_summary">
+                <div class="name_and_price">
+                  <p>Jhon Doe</p>
+                  <div class="price_summary">
+                    <p>32 pc</p>
+                    <p class="summary_price">$4500</p>
+                  </div>
+                </div>
+                <div class="place_and_payment_status">
+                  <p class="place">Maharashtra</p>
+                  <p class="payment_status">Payment Pending</p>
+                </div>
+              </div>
+              <div class="single_summary blue_coloured">
+                <div class="name_and_price">
+                  <p>Jhon Doe</p>
+                  <div class="price_summary">
+                    <p>32 pc</p>
+                    <p class="summary_price">$4500</p>
+                  </div>
+                </div>
+                <div class="place_and_payment_status">
+                  <p class="place">Maharashtra</p>
+                  <p class="payment_status">Finalising Cart</p>
+                </div>
+              </div>
+              <div class="single_summary red_colored">
+                <div class="name_and_price">
+                  <p>Jhon Doe</p>
+                  <div class="price_summary">
+                    <p>32 pc</p>
+                    <p class="summary_price">$4500</p>
+                  </div>
+                </div>
+                <div class="place_and_payment_status">
+                  <p class="place">Maharashtra</p>
+                  <p class="payment_status">Billed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inventory_wise_section">
+            <h1>Inventory wise Orders</h1>
+            <div class="order_summary">
+              <div class="single_order">
+                <div class="single_order_image">
+                  <img src="images/muslin.png" alt="" />
+                </div>
+                <div class="inventory_single_order_summary">
+                  <div class="dress_name">
+                    <h1>Muslin Dress Ethnic Wear</h1>
+                  </div>
+                  <div class="supplier_and_price">
+                    <p>XSupplier</p>
+                    <p>$42/pc</p>
+                  </div>
+                  <div class="pieces_and_buyers">
+                    <p>Pieces 15</p>
+                    <p>Buyers 7</p>
+                  </div>
+                  <div class="date_and_wishlisted">
+                    <p>18/05/2021</p>
+                    <p>Wishlisted 9</p>
+                  </div>
+                </div>
+              </div>
+              <div class="single_order">
+                <div class="single_order_image">
+                  <img src="images/cotton.png" alt="" />
+                </div>
+                <div class="inventory_single_order_summary">
+                  <div class="dress_name">
+                    <h1>Muslin Dress Ethnic Wear</h1>
+                  </div>
+                  <div class="supplier_and_price">
+                    <p>XSupplier</p>
+                    <p>$42/pc</p>
+                  </div>
+                  <div class="pieces_and_buyers">
+                    <p>Pieces 15</p>
+                    <p>Buyers 7</p>
+                  </div>
+                  <div class="date_and_wishlisted">
+                    <p>18/05/2021</p>
+                    <p>Wishlisted 9</p>
+                  </div>
+                </div>
+              </div>
+              <div class="single_order">
+                <div class="single_order_image">
+                  <img src="images/silk.png" alt="" />
+                </div>
+                <div class="inventory_single_order_summary">
+                  <div class="dress_name">
+                    <h1>Muslin Dress Ethnic Wear</h1>
+                  </div>
+                  <div class="supplier_and_price">
+                    <p>XSupplier</p>
+                    <p>$42/pc</p>
+                  </div>
+                  <div class="pieces_and_buyers">
+                    <p>Pieces 15</p>
+                    <p>Buyers 7</p>
+                  </div>
+                  <div class="date_and_wishlisted">
+                    <p>18/05/2021</p>
+                    <p>Wishlisted 9</p>
+                  </div>
+                </div>
+              </div>
+              <div class="single_order">
+                <div class="single_order_image">
+                  <img src="images/wool.png" alt="" />
+                </div>
+                <div class="inventory_single_order_summary">
+                  <div class="dress_name">
+                    <h1>Muslin Dress Ethnic Wear</h1>
+                  </div>
+                  <div class="supplier_and_price">
+                    <p>XSupplier</p>
+                    <p>$42/pc</p>
+                  </div>
+                  <div class="pieces_and_buyers">
+                    <p>Pieces 15</p>
+                    <p>Buyers 7</p>
+                  </div>
+                  <div class="date_and_wishlisted">
+                    <p>18/05/2021</p>
+                    <p>Wishlisted 9</p>
+                  </div>
+                </div>
+              </div>
+              <div class="single_order">
+                <div class="single_order_image">
+                  <img src="images/muslin.png" alt="" />
+                </div>
+                <div class="inventory_single_order_summary">
+                  <div class="dress_name">
+                    <h1>Muslin Dress Ethnic Wear</h1>
+                  </div>
+                  <div class="supplier_and_price">
+                    <p>XSupplier</p>
+                    <p>$42/pc</p>
+                  </div>
+                  <div class="pieces_and_buyers">
+                    <p>Pieces 15</p>
+                    <p>Buyers 7</p>
+                  </div>
+                  <div class="date_and_wishlisted">
+                    <p>18/05/2021</p>
+                    <p>Wishlisted 9</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order_stats_analytics">
+            <div class="order_status">
+              <h1>Orders Status</h1>
+              <div id="myChart1" style="height: 8vw; width: 100%"></div>
+            </div>
+            <div class="order_analytics_and_stats">
+              <h1>Analytics and Statistics</h1>
+              <div>
+                <canvas
+                  id="myChart2"
+                  style="height: 10vw; width: 100%"
+                ></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="dashboard_contacts">
+        <div class="contact_section">
+          <div class="top_contact">
+            <div class="contact_avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="top_contact_detail">
+              <h1>Ritz Milan</h1>
+              <p>7279434247</p>
+            </div>
+            <div class="top_contact_date">
+              <h1><strong>09 May</strong></h1>
+              <p>Sunday</p>
+            </div>
+          </div>
+          <div class="contact_list">
+            <div class="search_header">
+              <h1>All Buyers</h1>
+              <p><i class="fas fa-search"></i></p>
+            </div>
+            <div class="contacts">
+              <ul>
+                <li>
+                  <div class="contact_list_element">
+                    <div class="contact_name_and_place">
+                      <h1>Jhon Doe</h1>
+                      <p>Maharashtra</p>
+                    </div>
+                    <div class="contact_id">734229473</div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="contact_list_element">
+                    <div class="contact_name_and_place">
+                      <h1>Jhonathan White</h1>
+                      <p>Maharashtra</p>
+                    </div>
+                    <div class="contact_id">734229473</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact_list_element">
+                    <div class="contact_name_and_place">
+                      <h1>Cris Matte</h1>
+                      <p>Maharashtra</p>
+                    </div>
+                    <div class="contact_id">734229473</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact_list_element">
+                    <div class="contact_name_and_place">
+                      <h1>James Wane</h1>
+                      <p>Maharashtra</p>
+                    </div>
+                    <div class="contact_id">734229473</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="supplier_modal_section" id="supplier_modal_section">
+        <div class="modal">
+          <div class="add_supplier_heading">
+            <h1>Add Supplier Associations</h1>
+          </div>
+          <div class="modal_buyer_header">
+            <div class="modal_buyer_header_details">
+              <h1>Ritz Milan</h1>
+              <p>Maharashtra</p>
+            </div>
+            <select name="supplier" id="add_supplier">
+              <option value="">Add Supplier</option>
+              <option value="">4365346</option>
+              <option value="">dsfdjh</option>
+            </select>
+          </div>
+          <div class="supplier_and_category_section">
+            <div class="supplier_and_category">
+              <p>Supplier</p>
+              <p>Category</p>
+            </div>
+            <ul>
+              <li>
+                <div class="supplier_name_place">
+                  <h1>Jhon Doe</h1>
+                  <p>Maharashtra</p>
+                </div>
+                <div class="supplier_category_delete">
+                  <select name="supplier_category" id="supplier_category">
+                    <!-- <option value="null" disabled selected>
+                      Add Buyer Category
+                    </option> -->
+                    <option value="category_1">category_1</option>
+                    <option value="category_2">category_2</option>
+                    <option value="category_3">category_3</option>
+                  </select>
+                  <i class="fas fa-trash"></i>
+                </div>
+              </li>
+              <li>
+                <div class="supplier_name_place">
+                  <h1>Jhonathan White</h1>
+                  <p>Maharashtra</p>
+                </div>
+                <div class="supplier_category_delete">
+                  <select name="supplier_category" id="supplier_category">
+                    <!-- <option value="null" disabled selected>
+                      Add Buyer Category
+                    </option> -->
+                    <option value="category_1">category_1</option>
+                    <option value="category_2">category_2</option>
+                    <option value="category_3">category_3</option>
+                  </select>
+                  <i class="fas fa-trash"></i>
+                </div>
+              </li>
+              <li>
+                <div class="supplier_name_place">
+                  <h1>Cris Matte</h1>
+                  <p>Maharashtra</p>
+                </div>
+                <div class="supplier_category_delete">
+                  <select name="supplier_category" id="supplier_category">
+                    <!-- <option value="null" disabled selected>
+                      Add Buyer Category
+                    </option> -->
+                    <option value="category_1">category_1</option>
+                    <option value="category_2">category_2</option>
+                    <option value="category_3">category_3</option>
+                  </select>
+                  <i class="fas fa-trash"></i>
+                </div>
+              </li>
+              <li>
+                <div class="supplier_name_place">
+                  <h1>JAmes Wane</h1>
+                  <p>Maharashtra</p>
+                </div>
+                <div class="supplier_category_delete">
+                  <select name="supplier_category" id="supplier_category">
+                    <!-- <option value="null" disabled selected>
+                      Add Buyer Category
+                    </option> -->
+                    <option value="category_1">category_1</option>
+                    <option value="category_2">category_2</option>
+                    <option value="category_3">category_3</option>
+                  </select>
+                  <i class="fas fa-trash"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="modal_close_button" id="modal_close_button">
+            <i class="fas fa-times-circle"></i>
+          </button>
+          <button class="save_access_btn" id="save_access_btn">
+            Save And Give Access
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="chart.js"></script>
+  </body>
+</html>
